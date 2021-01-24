@@ -318,7 +318,5 @@ public class Main {
 		frame.setVisible(true);
 
 	}
-//	public void actionPerformed(ActionEvent arg0) {
-//		
-//	}
+
 }
