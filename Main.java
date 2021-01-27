@@ -35,7 +35,6 @@ public class Main {
 		//create the frame
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//frame.setBackground(Color.green);
 		String any = "any";
 		//create the array of cars
 		
@@ -191,6 +190,7 @@ public class Main {
 		mainPanel.add(topPanel);
 		
 		JLabel topLabel = new JLabel("Sports cars dealership");
+		topLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
 		topPanel.add(topLabel);
 		
 		//create the middle panel and split it vertically
@@ -205,16 +205,21 @@ public class Main {
 		
 		JLabel topGreetingsLabel = new JLabel("Here you can find your dream car and see its worth");
 		leftMiddlePanel.add(topGreetingsLabel);
-		
+		topGreetingsLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		JLabel bottomGreetingsLabel = new JLabel("We have gathered the best offers from all around the world");
 		leftMiddlePanel.add(bottomGreetingsLabel);
-		
+		bottomGreetingsLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		JLabel warningLabel1 = new JLabel("Note: depending on where you live, delivery may take up to 3 months");
 		leftMiddlePanel.add(warningLabel1);
+		warningLabel1.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		JLabel warningLabel2 = new JLabel("Note: There may be import costs");
 		leftMiddlePanel.add(warningLabel2);
-		
+		warningLabel2.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		//create right middle panel and fill it
 		JPanel rightMiddlePanel = new JPanel();
@@ -222,6 +227,8 @@ public class Main {
 		rightMiddlePanel.setLayout(new BoxLayout(rightMiddlePanel, BoxLayout.Y_AXIS));
 		
 		JLabel priceMargineLabel = new JLabel("First select the price margine");
+		priceMargineLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		rightMiddlePanel.add(priceMargineLabel);
 		
 		//create a panel oriented horizontally with the from to fields
@@ -231,18 +238,24 @@ public class Main {
 		
 		JLabel fromLabel = new JLabel("From:");
 		fromToPanel.add(fromLabel);
+		fromLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		JTextField fromTextField = new JTextField();
 		fromToPanel.add(fromTextField);
 		
 		JLabel toLabel = new JLabel("To:");
 		fromToPanel.add(toLabel);
+		toLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		JTextField toTextField = new JTextField();
 		fromToPanel.add(toTextField);
 		
 		JLabel countryLabel = new JLabel("Then enter the country of manufacture");
 		rightMiddlePanel.add(countryLabel);
+		countryLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		//create the array of countries
 		String[] countries = {"Any", "England", "Germany", "Italy",
@@ -253,6 +266,8 @@ public class Main {
 		
 		JLabel brandLabel = new JLabel("Finally, select the brand");
 		rightMiddlePanel.add(brandLabel);
+		brandLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
+
 		
 		//create the array of brands
 		String[] brands = {"Any", "Acura", "Alfa Romeo", "Aston Martin", "Audi", 
@@ -277,8 +292,7 @@ public class Main {
 			txtarea.setRows(25);
 			txtarea.setColumns(25);
 		    txtarea.setWrapStyleWord(true);
-		    txtarea.setBackground(Color.BLACK);
-		    txtarea.setSelectedTextColor(Color.WHITE);
+		    txtarea.setBackground(Color.LIGHT_GRAY);
 		    txtarea.setFont(new Font("Verdana", Font.PLAIN, 15));
 	    JScrollPane scroll = new JScrollPane (txtarea);
 	    bottomPanel.add(scroll);
