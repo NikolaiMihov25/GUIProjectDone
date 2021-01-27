@@ -39,7 +39,6 @@ public class Main {
 		//create the array of cars
 		
 		List <Cars> cars;
-		Cars[] car = new Cars[150];
 		Cars car1 = new Cars(150000, "Japan", "Acura", "Acura NSX 2017");
 		Cars car2 = new Cars(10000, "Japan", "Acura", "Acura RSX-S 2004 Coupe");
 		Cars car3 = new Cars(45000, "Italy", "Alfa Romeo", "Alfa Romeo Giulia Quadrofoglio");
