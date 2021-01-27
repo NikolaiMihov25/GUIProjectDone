@@ -328,6 +328,9 @@ public class Main {
 						}
 					}
 				}
+				if(text.equals("")) {
+					text+= "No results have been found";
+				}
 				txtarea.setText(text);
 			}
 		});
