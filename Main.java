@@ -11,9 +11,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Font;
+
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -33,6 +35,7 @@ public class Main {
 		//create the frame
 		JFrame frame = new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setBackground(Color.green);
 		String any = "any";
 		//create the array of cars
 		
@@ -274,6 +277,9 @@ public class Main {
 			txtarea.setRows(25);
 			txtarea.setColumns(25);
 		    txtarea.setWrapStyleWord(true);
+		    txtarea.setBackground(Color.BLACK);
+		    txtarea.setSelectedTextColor(Color.WHITE);
+		    txtarea.setFont(new Font("Verdana", Font.PLAIN, 15));
 	    JScrollPane scroll = new JScrollPane (txtarea);
 	    bottomPanel.add(scroll);
 		
@@ -308,7 +314,6 @@ public class Main {
 						}
 					}
 				}
-				
 				txtarea.setText(text);
 			}
 		});
